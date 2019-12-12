@@ -134,6 +134,15 @@ props {
   }
 }
 props {
+  module: "android.sysprop.OtaProperties"
+  prop {
+    api_name: "warm_reset"
+    access: ReadWrite
+    prop_name: "ota.warm_reset"
+    integer_as_bool: true
+  }
+}
+props {
   module: "android.sysprop.ProductProperties"
   prop {
     api_name: "unbundled_apps"
@@ -438,5 +447,18 @@ props {
     access: ReadWrite
     scope: Internal
     prop_name: "vold.encrypt_time_remaining"
+  }
+}
+props {
+  module: "android.sysprop.WifiProperties"
+  prop {
+    api_name: "start_supplicant"
+    access: Writeonce
+    prop_name: "ctl.start$supplicant"
+  }
+  prop {
+    api_name: "stop_supplicant"
+    access: Writeonce
+    prop_name: "ctl.stop$supplicant"
   }
 }
