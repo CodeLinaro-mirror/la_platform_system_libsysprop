@@ -8,6 +8,15 @@ props {
   }
 }
 props {
+  module: "android.sysprop.ApkVerityProperties"
+  prop {
+    api_name: "apk_verity_mode"
+    type: Integer
+    access: Writeonce
+    prop_name: "ro.apk_verity.mode"
+  }
+}
+props {
   module: "android.sysprop.CarProperties"
   prop {
     api_name: "boot_user_override_id"
@@ -131,6 +140,24 @@ props {
     api_name: "set_menu_language"
     scope: Internal
     prop_name: "ro.hdmi.set_menu_language"
+  }
+}
+props {
+  module: "android.sysprop.MediaProperties"
+  prop {
+    api_name: "swcodec_ion_align"
+    type: Integer
+    prop_name: "ro.com.android.media.swcodec.ion.align"
+  }
+  prop {
+    api_name: "swcodec_ion_flags"
+    type: Integer
+    prop_name: "ro.com.android.media.swcodec.ion.flags"
+  }
+  prop {
+    api_name: "swcodec_ion_heapmask"
+    type: Integer
+    prop_name: "ro.com.android.media.swcodec.ion.heapmask"
   }
 }
 props {
