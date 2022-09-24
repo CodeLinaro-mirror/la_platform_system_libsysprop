@@ -383,6 +383,12 @@ props {
 props {
   module: "android.sysprop.WifiProperties"
   prop {
+    api_name: "softap_iface_on_dual_wlan"
+    type: String
+    access: ReadWrite
+    prop_name: "wifi.softap.iface.on.dual.wlan"
+  }
+  prop {
     api_name: "start_supplicant"
     access: Writeonce
     prop_name: "ctl.start$supplicant"
