@@ -260,7 +260,7 @@ prop {
     type: Boolean
     scope: Public
     access: Readonly
-    prop_name: "bluetooth.profile.hap.client.enabled"
+    prop_name: "bluetooth.profile.qti_hap.client.enabled"
 }
 
 # Whether the Hands-Free Profile (HFP) Audio Gateway role is enabled on this device.
