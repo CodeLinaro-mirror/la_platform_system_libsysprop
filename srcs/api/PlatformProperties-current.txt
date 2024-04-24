@@ -125,7 +125,7 @@ props {
   }
   prop {
     api_name: "isProfileHapClientEnabled"
-    prop_name: "bluetooth.profile.hap.client.enabled"
+    prop_name: "bluetooth.profile.bap.unicast.client.enabled"
   }
   prop {
     api_name: "isProfileHfpAgEnabled"
