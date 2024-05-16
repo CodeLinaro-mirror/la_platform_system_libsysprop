@@ -278,8 +278,8 @@ prop {
     api_name: "isProfileAshaCentralEnabled"
     type: Boolean
     scope: Public
-    access: Readonly
-    prop_name: "persist.sys.fflag.override.settings_bluetooth_hearing_aid"
+    access: ReadWrite
+    prop_name: "persist.bluetooth.asha.enabled"
 }
 
 # Whether the Audio/Video Remote Control Profile (AVRCP) Controller role is enabled on this device.

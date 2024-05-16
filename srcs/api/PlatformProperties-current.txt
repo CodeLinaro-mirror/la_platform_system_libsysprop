@@ -91,7 +91,8 @@ props {
   }
   prop {
     api_name: "isProfileAshaCentralEnabled"
-    prop_name: "persist.sys.fflag.override.settings_bluetooth_hearing_aid"
+    access: ReadWrite
+    prop_name: "persist.bluetooth.asha.enabled"
   }
   prop {
     api_name: "isProfileAvrcpControllerEnabled"
