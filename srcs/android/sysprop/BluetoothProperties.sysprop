@@ -286,8 +286,8 @@ prop {
     api_name: "isProfileAshaCentralEnabled"
     type: Boolean
     scope: Public
-    access: ReadWrite
-    prop_name: "persist.bluetooth.asha.enabled"
+    access: Readonly
+    prop_name: "bluetooth.profile.asha.central.enabled"
 }
 
 # Whether the Audio/Video Remote Control Profile (AVRCP) Controller role is enabled on this device.

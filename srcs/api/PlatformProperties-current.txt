@@ -100,8 +100,7 @@ props {
   }
   prop {
     api_name: "isProfileAshaCentralEnabled"
-    access: ReadWrite
-    prop_name: "persist.bluetooth.asha.enabled"
+    prop_name: "bluetooth.profile.asha.central.enabled"
   }
   prop {
     api_name: "isProfileAvrcpControllerEnabled"
