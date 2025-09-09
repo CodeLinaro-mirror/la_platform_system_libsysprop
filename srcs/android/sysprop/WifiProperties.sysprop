@@ -32,3 +32,11 @@ prop {
     access: Writeonce
     prop_name: "ctl.stop$supplicant"
 }
+
+prop {
+    api_name: "softap_iface_on_dual_wlan"
+    type: String
+    scope: Public
+    access: ReadWrite
+    prop_name: "wifi.softap.iface.on.dual.wlan"
+}
