@@ -510,6 +510,26 @@ props {
   }
 }
 props {
+  module: "android.sysprop.PccProperties"
+  prop {
+    api_name: "audit_mode_batching_enabled"
+    access: ReadWrite
+    prop_name: "persist.pcc.audit_mode.batching.enabled"
+  }
+  prop {
+    api_name: "audit_mode_flush_time_ms"
+    type: Integer
+    access: ReadWrite
+    prop_name: "persist.pcc.audit_mode.batching.flush_time_ms"
+  }
+  prop {
+    api_name: "audit_mode_max_batch_size"
+    type: Integer
+    access: ReadWrite
+    prop_name: "persist.pcc.audit_mode.batching.max_batch_size"
+  }
+}
+props {
   module: "android.sysprop.PowerProperties"
   prop {
     api_name: "fixed_performance_scale_factor"
@@ -607,6 +627,16 @@ props {
     api_name: "wake_lock_timeout"
     type: Integer
     prop_name: "ro.ril.wake_lock_timeout"
+  }
+}
+props {
+  module: "android.sysprop.ThermalDynamicProperties"
+  prop {
+    api_name: "reload_thermal_dynamic_config_profile"
+    type: Enum
+    access: ReadWrite
+    prop_name: "thermal.dynamic_config_profile"
+    enum_values: "default|setup|kids_setup|kids"
   }
 }
 props {
